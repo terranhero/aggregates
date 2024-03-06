@@ -5,8 +5,8 @@ using Microsoft.SqlServer.Server;
 
 /// <summary>创建聚合函数，允许串联字符串</summary>
 [Serializable, SqlUserDefinedAggregate(Format.UserDefined, IsInvariantToDuplicates = false, IsInvariantToNulls = true,
-	IsInvariantToOrder = false, IsNullIfEmpty = true, MaxByteSize = 8000, Name = "SYSF_SORTEDSTRINGJOIN")]
-public struct SortedStringJoin : IBinarySerialize
+	IsInvariantToOrder = false, IsNullIfEmpty = true, MaxByteSize = 8000, Name = "SYSF_SORTEDJOIN")]
+public struct SortedJoin : IBinarySerialize
 {
 	private List<string> _results;
 
@@ -25,7 +25,7 @@ public struct SortedStringJoin : IBinarySerialize
 
 	}
 
-	public void Merge(SortedStringJoin Group)
+	public void Merge(SortedJoin Group)
 	{
 		_results.AddRange(Group._results);
 	}
