@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{760aec61-b30f-40f7-bde9-2a6c52902402}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -34,6 +34,8 @@
     <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
     <GenerateSqlClrDdl>True</GenerateSqlClrDdl>
     <TargetFrameworkProfile />
+    <AssemblyOwner>dbo</AssemblyOwner>
+    <PermissionSet>SAFE</PermissionSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Net472 Release\</OutputPath>
