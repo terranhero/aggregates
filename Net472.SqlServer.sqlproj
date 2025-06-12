@@ -81,6 +81,7 @@
     <Compile Include="Quartile2.cs" />
     <Compile Include="Quartile3.cs" />
     <Compile Include="SortedJoin.cs" />
+    <Compile Include="Quartile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
