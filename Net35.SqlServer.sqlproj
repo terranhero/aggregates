@@ -25,7 +25,7 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\packages\GoldSoft.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>basic.snk</AssemblyOriginatorKeyFile>
     <SccProjectName>Svn</SccProjectName>
     <SccProvider>SubversionScc</SccProvider>
     <SccAuxPath>Svn</SccAuxPath>
@@ -78,7 +78,6 @@
     <Compile Include="Quartile1.cs" />
     <Compile Include="Quartile2.cs" />
     <Compile Include="Quartile3.cs" />
-    <Compile Include="SortedJoin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
